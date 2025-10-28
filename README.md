@@ -1,6 +1,5 @@
-# final-project
 
-# COURSE-NET FINAL PROJECT
+# FINAL PROJECT
 
 Repositori ini berisi kumpulan tugas akhir untuk menyelesaikan proyek akhir program **[Course-Net Java Spring](https://course-net.com/course/)**.  
 Fokus proyek ini adalah penerapan konsep **Java Spring** dari dasar hingga integrasi API eksternal.
