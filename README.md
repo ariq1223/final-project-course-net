@@ -6,7 +6,8 @@ Fokus proyek ini adalah penerapan konsep **Java Spring** dari dasar hingga integ
 
 ---
 
-## Struktur Proyek
+## Struktur Project
+
 
 Terdapat 5 proyek utama yang dikembangkan:
 
