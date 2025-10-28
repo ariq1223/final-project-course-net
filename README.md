@@ -9,7 +9,7 @@ Fokus proyek ini adalah penerapan konsep **Java Spring** dari dasar hingga integ
 ## Struktur Project
 
 
-Terdapat 5 proyek utama yang dikembangkan:
+Terdapat 5 project utama yang dikembangkan:
 
 1. **[Project 1](./project1)** — Setup Git Repository  
 2. **[Project 2](./project2)** — Fitur Akun  
