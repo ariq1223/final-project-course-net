@@ -110,7 +110,7 @@ Fungsi: mengelola transaksi pembelian pulsa
 
 # 🔄 Flow Proses Transaksi
 
-```mermaid
+```
 flowchart TD
     A[User Request: POST /transactions/pulsa] --> B[Transactions Service]
     B --> C[Users Service: get user]
@@ -127,7 +127,7 @@ flowchart TD
 Pastikan Docker sudah terinstall pada perangkat Anda.
 
 ```bash
-docker-compose up -d
+docker-compose up --build
 
 
 
