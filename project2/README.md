@@ -1,4 +1,4 @@
-\# 📦 Proyek 2 — Fitur Akun (Registrasi, Login, Verifikasi, Keamanan Data)
+# 📦 Proyek 2 — Fitur Akun (Registrasi, Login, Verifikasi, Keamanan Data)
 
 
 #### Nama: Ariq Radhi Arganto
@@ -63,18 +63,18 @@ server.port=9090
  -Validasi input
 
  Endpoint:
-
+```bash
 POST /api/users/register
-
+```
 
 #### Contoh Body Request:
-
+```bash
 {
   "name": "John Doe",
   "email": "john@example.com",
   "password": "password123"
 }
-
+```
 #### Login Pengguna
 
 1. Mengecek email
@@ -82,32 +82,32 @@ POST /api/users/register
 3. Mengembalikan status verified
 
 Endpoint:
-
+```bash
 POST /api/users/login
-
+```
 
 Body:
-
+```bash
 {
   "email": "ariq@example.com",
   "password": "password12345"
 }
-
+```
 ####  Upgrade Akun (Simulasi Verifikasi Email)
 
 Mengubah field verified → TRUE
 
 Endpoint:
-
+```bash
 POST /api/users/verify
-
+```
 
 Body:
-
+```bash
 {
   "email": "john@example.com"
 }
-
+```
 #### Pengujian Dengan Postman
 Fitur	Endpoint	Status
 1. Registrasi	POST /api/users/register	
