@@ -1,7 +1,7 @@
 # 📦 Microservice Project – Gabungan Project 4 & 5  
 Java Spring Boot • Docker • REST API • Microservice Architecture
 
-Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Project 5 (Account Service)** menjadi satu arsitektur **Microservice** yang saling terhubung menggunakan **Eureka Server**, **API Gateway**, serta **User/Account Service**.
+Proyek ini merupakan penggabungan dari **Project 4(fitur pembayaran & saldo) ** dan **Project 5(Integrasi third Party API)** menjadi satu arsitektur **Microservice** yang saling terhubung 
 
 ---
 
@@ -9,12 +9,11 @@ Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Pr
 # 🔧 Teknologi yang Digunakan
 
 - **Java Spring Boot**
-- **REST API**
 - **MySQL / MariaDB**
 - **Docker Compose**
 - **Spring Cloud Netflix**
 - **Reloadly (3rd API)**
-- **Eureka Discovery Server (Opsional)**
+- **Eureka Discovery Server **
 
 ---
 
