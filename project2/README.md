@@ -31,21 +31,6 @@ Proyek ini mengikuti prinsip dasar **UU PDP**, termasuk:
 ---
 
 
-## 📁 Struktur Project (Spring Boot)
-src/main/java/com/example/ecommerceaccount/
-│
-├── controller/
-│   └── UserController.java
-│
-├── service/
-│   └── UserService.java
-│
-├── repository/
-│   └── UserRepository.java
-│
-└── entity/
-    └── User.java
-
 ## ⚙️ application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/login_db
 spring.datasource.username=root
