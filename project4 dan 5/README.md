@@ -4,7 +4,7 @@ Java Spring Boot • Docker • REST API • Microservice Architecture
 Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Project 5 (Account Service)** menjadi satu arsitektur **Microservice** yang saling terhubung menggunakan **Eureka Server**, **API Gateway**, serta **User/Account Service**.
 
 ---
-
+```
 # 🚀 Arsitektur Sistem
 
 [ Client ]
@@ -14,7 +14,7 @@ Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Pr
      |
      v
 [ Eureka Server ] <--> [ Account Service ]
-
+```
 
 # 🔧 Teknologi yang Digunakan
 
