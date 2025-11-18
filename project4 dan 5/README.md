@@ -15,28 +15,6 @@ Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Pr
      v
 [ Eureka Server ] <--> [ Account Service ]
 
-# 📁 Struktur Proyek
-
-Struktur garis besar:
-project/
-├── users-service/
-│   ├── controller/
-│   │   └── UsersController.java
-│   ├── service/
-│   ├── repository/
-│   └── model/
-├── products-service/
-│   ├── controller/
-│   │   └── ProductsController.java
-├── transactions-service/
-│   ├── controller/
-│   │   └── TransactionController.java
-├── docker-compose.yml
-├── api-gateway (opsional)
-├── eureka-server (opsional)
-
-
----
 
 # 🔧 Teknologi yang Digunakan
 
