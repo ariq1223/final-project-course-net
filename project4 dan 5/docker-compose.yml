@@ -1,0 +1,56 @@
+version: '3.8'
+services:
+  mysql-users:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: users_db
+    ports:
+      - "33061:3306"
+
+  mysql-products:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: products_db
+    ports:
+      - "33062:3306"
+
+  mysql-transactions:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: transactions_db
+    ports:
+      - "33063:3306"
+
+  eureka-server:
+    build: ./eureka-server
+    ports:
+      - "8761:8761"
+
+  users:
+    build: ./users
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mysql-users
+      - eureka-server
+
+  products:
+    build: ./products
+    ports:
+      - "8082:8082"
+    depends_on:
+      - mysql-products
+      - eureka-server
+
+  transactions:
+    build: ./transactions
+    ports:
+      - "8083:8083"
+    depends_on:
+      - mysql-transactions
+      - users
+      - products
+      - eureka-server
