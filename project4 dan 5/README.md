@@ -110,7 +110,7 @@ Fungsi: mengelola transaksi pembelian pulsa
 
 # 🔄 Flow Proses Transaksi
 
-```
+```mermaid
 flowchart TD
     A[User Request: POST /transactions/pulsa] --> B[Transactions Service]
     B --> C[Users Service: get user]
