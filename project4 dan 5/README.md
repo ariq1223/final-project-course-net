@@ -4,17 +4,7 @@ Java Spring Boot • Docker • REST API • Microservice Architecture
 Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Project 5 (Account Service)** menjadi satu arsitektur **Microservice** yang saling terhubung menggunakan **Eureka Server**, **API Gateway**, serta **User/Account Service**.
 
 ---
-```
-# 🚀 Arsitektur Sistem
 
-[ Client ]
-     |
-     v
-[ API Gateway ]
-     |
-     v
-[ Eureka Server ] <--> [ Account Service ]
-```
 
 # 🔧 Teknologi yang Digunakan
 
@@ -23,7 +13,7 @@ Proyek ini merupakan penggabungan dari **Project 4 (Gateway + Eureka)** dan **Pr
 - **MySQL / MariaDB**
 - **Docker Compose**
 - **Spring Cloud Netflix**
-- **API Gateway (Opsional)**
+- **Reloadly (3rd API)**
 - **Eureka Discovery Server (Opsional)**
 
 ---
@@ -108,26 +98,6 @@ Fungsi: mengelola transaksi pembelian pulsa
 
 ---
 
-# 🔄 Flow Proses Transaksi
-
-```mermaid
-flowchart TD
-    A[User Request: POST /transactions/pulsa] --> B[Transactions Service]
-    B --> C[Users Service: get user]
-    B --> D[Products Service: get product]
-    C --> E{Saldo Cukup?}
-    D --> E
-    E -->|Tidak| F[Return Error: Saldo tidak cukup]
-    E -->|Ya| G[Update saldo user]
-    G --> H[Simpan transaksi]
-    H --> I[Return Success]
-```
-## 🐳 Cara Menjalankan dengan Docker
-
-Pastikan Docker sudah terinstall pada perangkat Anda.
-
-```bash
-docker-compose up --build
 
 
 
