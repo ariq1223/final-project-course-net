@@ -1,4 +1,4 @@
-# 📦 Proyek 2 — Fitur Akun (Registrasi, Login, Verifikasi, Keamanan Data)
+#  Proyek 2 — Fitur Akun (Registrasi, Login, Verifikasi, Keamanan Data)
 
 
 #### Nama: Ariq Radhi Arganto
@@ -6,7 +6,7 @@ Proyek ini mengimplementasikan fitur manajemen akun pengguna pada platform e-com
 
 ---
 
-## 🚀 Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 | Teknologi | Fungsi |
 |----------|--------|
@@ -19,7 +19,7 @@ Proyek ini mengimplementasikan fitur manajemen akun pengguna pada platform e-com
 
 ---
 
-## 🛡 Kepatuhan UU PDP
+##  Kepatuhan UU PDP
 
 Proyek ini mengikuti prinsip dasar **UU PDP**, termasuk:
 
@@ -31,7 +31,7 @@ Proyek ini mengikuti prinsip dasar **UU PDP**, termasuk:
 ---
 
 
-## ⚙️ application.properties
+##  application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/login_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
@@ -40,7 +40,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 server.port=9090
 
-## 🧩 Fitur yang Diimplementasikan
+## Fitur yang Diimplementasikan
 ####  Registrasi Akun
 
  -Password di-hash otomatis menggunakan BCrypt
@@ -103,13 +103,4 @@ Verifikasi Akun	POST /api/users/verify
 
 ## Skema Database
 
-Tabel utama: **users**
 
-```sql
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,   -- hash BCrypt
-    verified BOOLEAN DEFAULT FALSE
-);
