@@ -32,20 +32,14 @@ Proyek ini mengikuti prinsip dasar **UU PDP**, termasuk:
 
 
 ##  application.properties
-spring.datasource.url=jdbc:mysql://localhost:3306/login_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-server.port=9090
 
 ## Fitur yang Diimplementasikan
 ####  Registrasi Akun
 
- -Password di-hash otomatis menggunakan BCrypt
- -Email harus unik
- -Validasi input
+ - Password di-hash otomatis menggunakan BCrypt
+ - Email harus unik
+ - validasi input
 
  Endpoint:
 ```bash
@@ -99,8 +93,6 @@ Fitur	Endpoint	Status
 2. Berhasil (password ter-hash)
 3. Login	POST /api/users/login	
 4. (mengembalikan status verified)
-Verifikasi Akun	POST /api/users/verify
-
-## Skema Database
+5. Verifikasi Akun	POST /api/users/verify
 
 
